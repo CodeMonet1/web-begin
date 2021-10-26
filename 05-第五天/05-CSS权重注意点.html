@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父亲的权重是100 */
+        #father {
+            color: red;
+        }
+        /* p继承的权重为0 */
+        p {
+            color: pink;
+        }
+        /* 继承的权重是0，如果该元素没有直接选中，不管父元素权重有多高，子元素得到的权重都是0 */
+        body {
+            color: red;
+        }
+        /* a链接浏览器默认制定了一个样式 蓝色的 有下划线 a{color：blue} */
+        a {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <p>你还是很好看</p>
+    </div>
+    <a href="#">我是单独的样式</a>
+</body>
+</html>

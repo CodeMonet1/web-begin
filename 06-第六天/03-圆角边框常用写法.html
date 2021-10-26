@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* border-radius: 100px; */
+            /* 50%就是宽度和高度的一半  等价于100% */
+            border-radius: 50%;
+            margin-bottom: 50px;
+        }
+        .rectangle {
+            width:  300px;
+            height: 100px;
+            background-color: green;
+            /* 圆角矩形设置为高度的一半 */
+            border-radius: 50px;
+        }
+        /* 分开写：border-top-left-radius、border-bottom-right-radius....... */
+        .radius {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin-top: 50px;
+            border-radius: 10px 70px 30px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">圆形</div>
+    <div class="rectangle">矩形</div>
+    <div class="radius">设置不同的圆角</div>
+</body>
+</html>
